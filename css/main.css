@@ -1,0 +1,438 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Webfonts */
+
+@import url("fonts.css");
+
+/* Body 
+---------------------------------------------------------------------- */
+html,
+body {
+	height: 100%;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	background: #000000;
+	font: 16px/30px "raleway-medium", serif;
+	font-weight: normal;
+	color: #575859;
+}
+
+/* links 
+----------------------------------------------------------------------- */
+a,
+a:visited {
+	outline: none;
+	color: white;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+	color: #fdc501;
+}
+
+/* Typography
+--------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+	font-family: "bonjovi", sans-serif;
+	color: #fdc501;
+	font-weight: 100;
+	-webkit-font-smoothing:antialiased;
+	font-style: normal;
+	margin: 20px 0 15px;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 0;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+h3 {
+	font-family: "Cinzel-Bold", sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+p {
+	margin: 15px 0 15px 0;
+}
+
+small {
+	font-size: 11px;
+	line-height: inherit;
+}
+
+
+/*Lists
+--------------------------------------------------------------------- */
+ul,
+ol {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 17px;
+}
+
+dl {
+	margin: 0 0 15px 0;
+}
+
+dt {
+	margin: 0;
+	color: #fdc501;
+}
+
+dd {
+	margin: 0 0 0 20px;
+}
+
+/* Floated image  
+--------------------------------------------------------------------- */
+img.pull-right {
+	margin: 12px 0px 0px 18px;
+}
+
+img.pull-left {
+	margin: 12px 18px 0px 0px;
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+.nav-wrap,
+.nav-wrap ul,
+.nav-wrap a {
+	margin: 0;
+	padding: 0;
+}
+
+/* nav-wrap */
+.nav-wrap {
+	position: absolute;
+	color:#F7D358;
+	letter-spacing: 1.5px;
+	text-align: center; 
+	z-index: 100;
+}
+
+ul.nav {
+	position: fixed;
+	top: 0;
+    width: 100%;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background: linear-gradient(#000000, transparent) repeat;
+
+}
+
+li {
+	display: inline;
+	font: 13px "Cinzel-Bold", sans-serif;
+}
+
+ul.nav li a:hover {
+	color: #fdc501;
+}
+
+/* block grids paddings 
+--------------------------------------------------------------------- */
+.bgrid {
+	padding: 0 20px;
+}
+
+/* Header Section
+--------------------------------------------------------------------- */
+/* header logo */
+header.logo {
+	background: #000000;
+	width: auto;
+	margin-left: 15px;
+	margin-right: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+/* Hero Section
+--------------------------------------------------------------------- */
+
+.hero {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-height: 30px;
+	width: 100%;
+	text-align: left;
+	position: relative;
+}
+
+.hero-content {
+	padding-top: 22px;
+	padding-bottom: 44px;	
+}
+
+/* hero slider */
+
+.hero-slider .slides h3 {
+	font: 22px "Cinzel-Bold", sans-serif;
+	letter-spacing: -1px;
+	color: #fdc501;    
+}
+
+.hero-slider .slides h4 {
+	font: 18px "Cinzel-Bold", sans-serif;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-slider .slides .flex-caption-1 {
+	float: left;
+	border: 1px solid #F7D358;
+	outline-color: #fdc501;
+	outline-style: double;
+	padding: 10px;
+}
+
+.hero-slider .slides .flex-caption-2 {
+	float: right;
+	border: 1px solid #F7D358;
+	outline-color: #fdc501;
+	outline-style: double;
+	padding: 10px;
+	margin-bottom: 20px
+}
+
+.hero-slider .slides .flex-caption-3 {
+	clear: both;
+	text-align: center;
+	border: 1px solid #F7D358;
+	outline-color: #fdc501;
+	outline-style: double;
+}
+
+
+
+
+
+/* About content
+--------------------------------------------------------------------- */
+.about {
+	background: #000000;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #15191d;
+}
+
+.about h3 {
+	font: 18px/36px "Cinzel-Bold", sans-serif;
+	color: #fdc501;
+	text-transform: none;
+	letter-spacing: 0;
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+/* Meet the Band 
+--------------------------------------------------------------------- */
+.about .team {
+	margin-top: 30px;
+}
+
+.team-wrapper {
+	margin: 0 auto;
+}
+
+.team-wrapper .member {
+	margin-bottom: 24px;
+	margin-top: 12px;
+}
+
+.team-wrapper .member h3 {
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+.team-wrapper .member span {
+	position: relative;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.team-wrapper .member-pic {
+	position: relative;
+	background: #000000;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 1;
+	vertical-align: bottom;
+	float: left;
+}
+
+.team-wrapper .member-pic img {
+	display: inline-block;
+	vertical-align: top;
+	float: inherit;
+	z-index: 1;
+}
+
+.team-wrapper .mask {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 75%;
+	height: 75%;
+	background: rgba(253, 197, 1, 0.5);
+	filter: alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	opacity: 0;
+	zoom: 1;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.team-wrapper .member:hover .mask {
+	filter: alpha(opacity=100);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+	zoom: 1;
+}
+
+
+/* Hits
+--------------------------------------------------------------------- */
+
+.hits {
+	display: inline-block;
+	background: #000000;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #15191d;
+}
+
+.hits ul {
+	display: inline-block;
+	border: 3px solid #fdc501;
+	outline-color: #fdc501;
+	outline-style: double;
+	height: 275px;
+ 	margin: 20px;
+  	padding: 20px;
+  	width: 400px;
+}
+
+.hits img {
+	float: right;
+	height: 300px;
+	width: 700px;
+	margin: 20px;
+	padding: 20px;
+}
+
+.find-out-more h3 {
+	position: absolute
+	display: inline-block;
+	text-align: center;
+}
+
+/* Footer
+--------------------------------------------------------------------- */
+
+footer {
+	padding-top: 60px;
+	padding-bottom: 24px;
+	position: relative;
+}
+
+footer.content-group {
+	margin-bottom: 12px;
+}
+
+footer.copyright {
+	display: inline-block;
+	margin: 15px 0;
+	padding: 24px 18px 6px 18px;
+	font: 14px/24px "Cinzel-Bold", sans-serif;
+	letter-spacing: .5px;
+	text-align: center;
+}
+
+.go-to-top {
+	position: relative;
+	top: -21px;
+	text-align: center;
+}
+
+.go-to-top a {
+	display: inline-block;
+	height: 54px;
+	width: 200px;
+	text-align: center;
+	margin-top: 20px;
+	font: 12px/54px "Cinzel-Bold", sans-serif;
+	letter-spacing: 2px;
+}
+
+
+
